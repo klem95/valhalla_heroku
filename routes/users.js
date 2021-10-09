@@ -1,9 +1,19 @@
 var express = require('express');
 var router = express.Router();
-
+const https = require('https');
+const request = require('request');
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  request('https://127.0.0.1:8002/', { json: true }, (err, res, body) => {
+  if (err) { return console.log(err); }
+  console.log(body.url);
+  console.log(body.explanation);
+  res.send(body.explanation);
+
+});
+  
 });
 
 module.exports = router;
+
+
