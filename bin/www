@@ -23,7 +23,7 @@ app.set('port', port);
 
 //var server = http.createServer(app);
 
-var server = httpProxy.createProxyServer({target:'http:///valhalla-pol-disp-demo.herokuapp.com:8002'}).listen(port); 
+var server = httpProxy.createProxyServer({target:'http://valhalla:8002'}).listen(port); 
 
 /**
  * Listen on provided port, on all network interfaces.
