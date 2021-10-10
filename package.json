@@ -2,6 +2,14 @@
   "name": "valhalla-pol-disp",
   "version": "0.0.0",
   "private": true,
+  "proxy": {
+    "/api": {
+      "target": "http://valhalla:8002",
+      "pathRewrite": {
+        "^/api": "/"
+      }
+    }
+  },
   "scripts": {
     "start": "node ./bin/www"
   },
