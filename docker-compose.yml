@@ -10,7 +10,7 @@ services:
   valhalla:
     image: gisops/valhalla:latest
     ports:
-      - "8002:80"
+      - "8002:8002"
     volumes:
       - ./custom_files/:/custom_files
     environment:
