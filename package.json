@@ -11,7 +11,7 @@
     }
   },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon --legacy-watch ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -22,6 +22,8 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "node-http-proxy": "^0.2.4",
+    "nodemon": "^2.0.13",
+    "proxy-by-url": "0.0.3",
     "request": "^2.81.0"
   }
 }
