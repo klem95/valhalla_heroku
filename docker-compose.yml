@@ -9,6 +9,7 @@ services:
      # -  .:/usr/app
      # - /usr/app/node_modules
 
+
   valhalla:
     image: gisops/valhalla:latest
     ports:
