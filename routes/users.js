@@ -2,6 +2,11 @@ var express = require('express');
 var router = express.Router();
 const https = require('https');
 const request = require('request');
+
+require('lrm-valhalla');
+ 
+
+
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   console.log("Trying to acess valhalla");
@@ -13,7 +18,7 @@ router.get('/', function(req, res, next) {
 });
   
 })
-
+ 
 module.exports = router;
 
 
