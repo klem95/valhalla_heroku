@@ -3,15 +3,15 @@ services:
   app:
     build: .
     ports:
-      - "3000:3000"
-      - "9229:9229"
+      - "8002:8002"
+      #- "9229:9229"
     volumes:
       -  .:/usr/app
       - /usr/app/node_modules
   valhalla:
     image: gisops/valhalla:latest
     ports:
-      - "8002:8002"
+      - "3000:3000"
     volumes:
       - ./custom_files/:/custom_files
     environment:
